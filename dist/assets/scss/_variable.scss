@@ -1,0 +1,58 @@
+$spacer: 1rem;
+$spacers: (
+  "-0-25": ($spacer * -.25),
+  "-0-5": ($spacer * -.5),
+  "-0-75": ($spacer * -.75),
+  "-1": ($spacer * -1),
+  "-1-25": ($spacer * -1.25),
+  "-1-5": ($spacer * -1.5),
+  "-1-75": ($spacer * -1.75),
+  "-2": ($spacer * -2),
+  "-2-25": ($spacer * -2.25),
+  "-2-5": ($spacer * -2.5),
+  "-2-75": ($spacer * -2.75),
+  "-3": ($spacer * -3),
+  "-3-25": ($spacer * -3.25),
+  "-3-5": ($spacer * -3.5),
+  "-3-75": ($spacer * -3.75),
+  "-4": ($spacer * -4),
+  "-4-25": ($spacer * -4.25),
+  "-4-5": ($spacer * -4.5),
+  "-4-75": ($spacer * -4.75),
+  "-5": ($spacer * -5),
+  0: 0,
+  "0-25": ($spacer * .25),
+  "0-5": ($spacer * .5),
+  "0-75": ($spacer * .75),
+  "1": ($spacer * 1),
+  "1-25": ($spacer * 1.25),
+  "1-5": ($spacer * 1.5),
+  "1-75": ($spacer * 1.75),
+  "2": ($spacer * 2),
+  "2-25": ($spacer * 2.25),
+  "2-5": ($spacer * 2.5),
+  "2-75": ($spacer * 2.75),
+  "3": ($spacer * 3),
+  "3-25": ($spacer * 3.25),
+  "3-5": ($spacer * 3.5),
+  "3-75": ($spacer * 3.75),
+  "4": ($spacer * 4),
+  "4-25": ($spacer * 4.25),
+  "4-5": ($spacer * 4.5),
+  "4-75": ($spacer * 4.75),
+  "5": ($spacer * 5),
+);
+
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+  ) !default;
+  $break-point-xs:  nth(nth($grid-breakpoints, 1), 2);
+  $break-point-sm:  nth(nth($grid-breakpoints, 2), 2);
+  $break-point-md:  nth(nth($grid-breakpoints, 3), 2);
+  $break-point-lg:  nth(nth($grid-breakpoints, 4), 2);
+  $break-point-xl:  nth(nth($grid-breakpoints, 5), 2);
