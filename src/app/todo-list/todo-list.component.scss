@@ -1,0 +1,139 @@
+h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.15);
+}
+
+.nav {
+    overflow: hidden;
+}
+
+.nav #search-box {
+    float: right;
+}
+
+.nav #search-box input {
+    -webkit-transition: all 0.4s; /* Safari */
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+    width: 80px;
+}
+
+.nav #search-box input:focus {
+    width: 320px;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+@media (min-width: 540px) {
+    .content-wrapper {
+        width: 90%;
+    }
+}
+
+@media (min-width: 720px) {
+    .content-wrapper {
+        width: 80%;
+    }
+}
+
+@media (min-width: 960px) {
+    .content-wrapper {
+        width: 70%;
+    }
+}
+
+#searchForm {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.task-input {
+    display: inline-block!important;
+  width: 90%!important;
+  margin-bottom: 0!important;
+}
+
+#content {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.footer {
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #777;
+}
+
+.footer > div {
+    float: left;
+}
+
+/* solution 2 */
+.footer #footer-left {
+    width: 25%;
+    padding-top: 4px;
+}
+
+.footer #footer-left p {
+    margin: 0;
+}
+
+.footer #footer-middle {
+    text-align: center;
+    width: 50%;
+}
+
+.footer #footer-right {
+    text-align: right;
+    width: 25%;
+}
+
+.footer .footer-btn {
+  outline: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #777;
+}
+
+.footer .footer-btn:hover {
+    border-color: #eee;
+    cursor: pointer;
+}
+
+.footer .footer-btn.active {
+    border-color: rgba(175, 47, 47, 0.15);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+/* .task-complete {
+    -webkit-appearance: none;
+  appearance: none;
+} */
+
+.task-complete::after {
+    /* url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>') */
+}
+
+.task-complete:checked::after {
+    /* url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -18 100 135"><circle cx="50" cy="50" r="50" fill="none" stroke="#ededed" stroke-width="3"/></svg>') */
+}

@@ -1,0 +1,14 @@
+<li fxLayout="row" [ngClass]="{'completed': task.isCompleted}">
+
+  <mat-checkbox fxFlex="5" [(ngModel)]="task.isCompleted" (change)="onUpdateTask()"></mat-checkbox>
+
+  <mat-form-field fxFlex="90">
+    <input matInput [(ngModel)]="task.desc" (focusout)="onUpdateTask()">
+  </mat-form-field>
+
+  <div fxFlex="5">
+    <a class="delete-task" (click)="onDeleteTask()">
+      <i class="material-icons">close</i>
+    </a>
+  </div>
+</li>

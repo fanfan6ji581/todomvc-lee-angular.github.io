@@ -1,0 +1,25 @@
+.mat-form-field {
+    display: block;
+    width: 100%;
+}
+
+.social-login {
+    a {
+        display: block;
+        margin-bottom: 1rem;
+        padding: .75rem 0;
+
+        &#facebook-login {
+            background-color: #3b5998;
+            color: #fff;
+        }
+
+        img {
+            float: left;
+            position: relative;
+            left: 1rem;
+            top: 0.5rem;
+            max-width: 1.5rem;
+        }
+    }
+}

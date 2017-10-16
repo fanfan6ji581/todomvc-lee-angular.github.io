@@ -1,0 +1,43 @@
+li {
+    padding: 0 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+li label {
+    vertical-align: middle;
+}
+
+li span {
+    // font-size: 24px!important;
+    font-weight: 300;
+    -webkit-transition: all 0.4s; /* Safari */
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+    color: #4d4d4d;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #d9d9d9;
+}
+
+li .delete-task {
+    display: none;
+    text-align: right;
+    margin-top: 6px;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+li .delete-task:hover {
+    color: rgba(175, 47, 47, 0.5);
+}
+
+li:hover .delete-task {
+    display: block;
+}
+
+mat-form-field {
+    padding-top: 6px;
+}
